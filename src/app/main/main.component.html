@@ -1,0 +1,86 @@
+<section class="holder" >
+
+  <div class="brand" [@fadeOutAnimation]="state">
+          <div class="s">
+              <h1 [innerHTML]="'saludo.hola' | translate"></h1>
+          </div>
+  </div>
+
+<div class="content">
+
+  <section class="box-1">
+
+      <div class="port-holder">
+
+         <div class="portfolio">
+
+           <h1><span>01-</span>{{'titles.portfolio'| translate}} </h1>
+
+              <div class="grid">
+
+                  <div class="img-holder" *ngFor="let work of works">
+
+                    <a [attr.href]="work.link" target="_blank">
+                      <p>{{work.link}} </p>
+                      <p>{{'ver'| translate}} &rarr;</p>
+                    </a>
+
+                  </div>
+
+              </div>
+
+         </div>
+
+      </div>
+
+</section>
+
+          <section class="box-2">
+            <h1><span>02-</span>{{'titles.about' | translate}}</h1>
+
+               <div class="about-holder">
+
+                 <p [innerHTML]="'about' | translate">.</p>
+
+                 <div class="img-holder">
+                    <img src="../../assets/foto.jpg" alt="">
+                </div>
+
+              </div>
+
+          </section>
+
+          <section class="box-3">
+                  <div class="project-holder">
+
+                          <h1><span>03-</span>{{'titles.project' | translate}} </h1>
+                                <span class="project-excerpt"> {{'excerpt' | translate}}</span>
+                          <div *ngFor="let project of projects" class="project">
+
+                                  <span id="number" [ngClass]="(project.id % 2 === 0) ? 'rigth' : 'left'">0{{project.id}}</span>
+
+                                  <div class="project-content">
+                                      <p id="techs"> Techs: {{project.techs}}</p>
+                                      <p id="description" > {{project.description}} </p>
+                                      <a id="link" [attr.href]="project.link" target="_blank"> 👉 code </a>
+                                      <a id="link" [attr.href]="project.demo" target="_blank"> 👉 demo </a>
+                                  </div>
+
+                          </div>
+
+                    </div>
+          </section>
+
+          <section class="box-4">
+              <h1><span>04-</span>{{'titles.contact' | translate}}</h1>
+              <p> 📧 --
+                <a href="mailto:sanjs965@gmail.com">sanjs965@gmail.com</a>
+              </p>
+              <p>✍ --
+                <a href="https://api.whatsapp.com/send?phone=549${3513355470}&text=%20{{'wappMessage'|translate}}" target="_blank">Send me a Wapp message</a>
+              </p>
+          </section>
+</div>
+
+</section>
+

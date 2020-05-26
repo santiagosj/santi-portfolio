@@ -1,0 +1,15 @@
+{
+    "saludo":{
+        "hola":"Hi!👋I´m Santi"
+    },
+    "about":"I am a web developer, passionate about thinking solutions that aim to solve the needs of specific business models. Mainly, I'm frontend developer and I have basics backend knowledge, I'm currently learning database design and testing. The stack that I use regularly: Angular 2+, ReactJS, GatsbyJS, HTML5, CSS3, JS(ES5 || ES6), JQuery, SASS, Bootstrap, Firebase, nodeJS, git and I am learning:,jest.js,mongoDB, electron.js and python.",
+    "titles":{
+        "about":"about me",
+        "project":"projects",
+        "contact":"contact",
+        "portfolio":"last works"
+    },
+    "ver":"see",
+    "excerpt":"< all this projects still in progress 🚧 👷 ⚗️ and are with educational purposes./>",
+    "wappMessage":"Hi, Santi! How are you?"
+}

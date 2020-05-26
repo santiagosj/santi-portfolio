@@ -1,0 +1,200 @@
+#app-holder{
+  background-color: var(--background);
+  color: var(--text-color);
+  height: fit-content;
+
+
+  .wrapper {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 3;
+  }
+
+  /////////////////////////////////////////////////
+  // Mixins
+  /////////////////////////////////////////////////
+  @mixin crater($top, $left, $size) {
+    content: '';
+    position: absolute;
+    top: $top;
+    left: $left;
+    width: $size;
+    height: $size;
+    background-color: #EFEEDA;
+    border-radius: 100%;
+    border: 4px solid #DEE1C5;
+  }
+
+  @mixin cloudBubble($top, $right, $width, $height, $deg) {
+    content: '';
+    display: block;
+    position: relative;
+    top: $top;
+    right: $right;
+    width: $width;
+    height: $height;
+    border: 8px solid #D4D4D2;
+    border-radius: 100%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotateZ($deg);
+    background-color: #fff;
+  }
+
+  /////////////////////////////////////////////////
+  // Day State
+  /////////////////////////////////////////////////
+  .toggle {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    margin-left: 100px;
+    padding: 4px;
+    border-radius: 40px;
+  }
+
+  .toggle:before,
+  .toggle:after {
+    content: '';
+    display: table;
+  }
+
+  .toggle:after {
+    clear: both;
+  }
+
+  .toggle-bg {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    background-color: #C0E6F6;
+    border-radius: 40px;
+    border: 4px solid #81C0D5;
+    transition: all .1s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  }
+
+  .toggle-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    border-radius: 40px;
+    z-index: 2;
+    opacity: 0;
+  }
+
+  .toggle-switch {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 4px;
+    top: 4px;
+    margin-left: 50px;
+    background-color: #F5EB42;
+    border: 4px solid #E4C74D;
+    border-radius: 50%;
+    transition: all .1s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  }
+
+  .toggle-switch-figure {
+    position: absolute;
+    bottom: -14px;
+    left: -50px;
+    display: block;
+    width: 80px;
+    height: 30px;
+    border: 8px solid #D4D4D2;
+    border-radius: 20px;
+    background-color: #fff;
+    transform: scale(0.4);
+    transition: all .12s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    &:after {
+      @include cloudBubble(-65px, -42px, 15px, 15px, 70deg);
+    }
+    &:before {
+      @include cloudBubble(-25px, -10px, 30px, 30px, 30deg);
+    }
+  }
+
+  .toggle-switch-figureAlt {
+    @include crater(5px, 2px, 2px);
+
+    box-shadow:
+    38px -7px 2px -0.5px #FCFCFC,
+    62px -9px 1.6px -1px #FCFCFC,
+    57px 8px 0 -2.8px #FCFCFC,
+    73px 6px 2px -1.8px #FCFCFC,
+    72px 18px 0 -2.5px #FCFCFC,
+    44px 20px 0 -1.5px #FCFCFC,
+    66px 16px 0 -3px #FCFCFC;
+
+    transition: all .12s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    transform: scale(0);
+  }
+
+  .toggle-switch-figureAlt:before {
+    @include crater(-9px, 10px, 7px);
+  }
+
+  .toggle-switch-figureAlt:after {
+    @include crater(9px, 0px, 2px);
+  }
+
+  /////////////////////////////////////////////////
+  // Night State
+  /////////////////////////////////////////////////
+  .toggle-input:checked ~ .toggle-switch {
+    margin-left: 0;
+    border-color: #DEE1C5;
+    background-color: #FFFDF2;
+    box-shadow: 0px 0px 18px -3px #FFFDF2;
+  }
+
+  .toggle-input:checked ~ .toggle-bg {
+    background-color: #484848;
+    border-color: #202020;
+  }
+
+  .toggle-input:checked ~ .toggle-switch .toggle-switch-figure {
+    margin-left: 40px;
+    opacity: 0;
+    transform: scale(0.1);
+  }
+
+  .toggle-input:checked ~ .toggle-switch .toggle-switch-figureAlt {
+    transform: scale(1);
+  }
+  .icons{
+    display: flex;
+    position: fixed;
+    bottom: 30px;
+    flex-direction: column;
+    right: 2px;
+    z-index: 1;
+    a{
+        color: var(--on-background);
+        text-decoration: none;
+        padding: 10px;
+        opacity: 0.9;
+        transition: opacity 1s ease-in-out;
+        font-size: 23px;
+        &:hover{
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+    }
+  }
+
+  label{
+    position: fixed;
+    top: 29px;
+    left: 30px;
+    letter-spacing: 5px;
+    /*color: #000000b8;*/
+  }
+
+}
