@@ -13,7 +13,7 @@ export const PROJECTS:Project[] = [
     {
         id: 2,
         link:'https://github.com/santiagosj/shopping-cart',
-        demo:'',
+        demo:'https://react-redux-shopping-cart.web.app/#/products',
         techs:['ReactJS','Redux','Node ☕',"Firebase"],
         description:"Main Concepts:The main gold was take a well known repo and modify it... without @#$!%&, and tackle Redux."
     },
