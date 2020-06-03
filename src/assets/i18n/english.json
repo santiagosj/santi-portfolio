@@ -2,7 +2,7 @@
     "saludo":{
         "hola":"Hi!👋I´m Santi"
     },
-    "about":"I am a web developer, passionate about thinking solutions that aim to solve the needs of specific business models. Mainly, I'm frontend developer and I have basics backend knowledge, I'm currently learning database design and testing. The stack that I use regularly: Angular 2+, ReactJS, GatsbyJS, HTML5, CSS3, JS(ES5 || ES6), JQuery, SASS, Bootstrap, Firebase, nodeJS, git and I am learning:,jest.js,mongoDB, electron.js and python.",
+    "about":"I am a web developer, passionate about thinking solutions that aim to solve day-to-day problems with technology. Mainly, I am a frontend developer with basic backend knowledge, currently I am learning database design and testing. Inside my usual Stack I usually use: Angular 2+, ReactJS, GatsbyJS, JS (ES5 || ES6), HTML5, CSS3, JQuery, SASS, Bootstrap, Firebase, nodeJS, git and I'm learning: jest.js, mongoDB, electron .js, a little python and bash script.",
     "titles":{
         "about":"about me",
         "project":"projects",
@@ -10,6 +10,6 @@
         "portfolio":"last works"
     },
     "ver":"see",
-    "excerpt":"< all this projects still in progress 🚧 👷 ⚗️ and are with educational purposes./>",
+    "excerpt":"< all this projects still in progress 🚧 👷 ⚗️ and have educational and experimental purposes. />",
     "wappMessage":"Hi, Santi! How are you?"
 }

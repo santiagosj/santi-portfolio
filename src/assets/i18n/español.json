@@ -2,7 +2,7 @@
     "saludo":{
         "hola":"Hola!👋 Soy Santi"
     },
-    "about":"Soy desarrollador web, apasionado por pensar soluciones que apunten a resolver las necesidades de modelos de negocios específicos. Principalmente, soy desarrollador frontend con conocimientos básicos en backend, actualmente me encuentro aprendiendo diseño de bases de datos y testing. Dentro de mi Stack habitual suelo usar: Angular 2+, ReactJS, GatsbyJS, HTML5, CSS3, JS(ES5 || ES6), JQuery, SASS, Bootstrap, Firebase, nodeJS, git y estoy aprendiendo: jest.js, mongoDB, electron.js y un poco de python.",
+    "about":"Soy desarrollador web, apasionado por pensar soluciones que apunten a resolveer los problemas del día a día con tecnología. Principalmente, soy desarrollador frontend con conocimientos básicos en backend, actualmente me encuentro aprendiendo diseño de bases de datos y testing. Dentro de mi Stack habitual suelo usar: Angular 2+, ReactJS, GatsbyJS, JS(ES5 || ES6), HTML5, CSS3, JQuery, SASS, Bootstrap, Firebase, nodeJS, git y estoy aprendiendo: jest.js, mongoDB, electron.js, un poco de python y bash script.",
     "titles":{
         "about":"sobre mi",
         "project":"proyectos",
@@ -10,6 +10,6 @@
         "portfolio":"ultimos trabajos"
     },
     "ver":"ver",
-    "excerpt":"< todos estos proyectos estan en progreso 🚧 👷 ⚗️ y son con propositos educacionales. />",
+    "excerpt":"< todos estos proyectos estan en progreso 🚧 👷 ⚗️ son con propositos educativos y experimentales. />",
     "wappMessage":"Hola Santi! Como estás?"
 }

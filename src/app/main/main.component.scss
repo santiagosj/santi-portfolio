@@ -3,7 +3,8 @@
   background-color: var(--background);
   color: var(--text-color);
   /*height: fit-content;*/
-
+  // -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+   // clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
     h1{
         letter-spacing: 12px;
         font-size: 46px;
@@ -41,7 +42,8 @@
 .content{
     position: absolute;
     top: 100%;
-
+     display: flex;
+     flex-direction: column;
     p{
         line-height: 3;
         letter-spacing: 2px;
@@ -63,6 +65,18 @@
                 .grid{
                     text-align: center;
                     .img-holder{
+                      border: 1px solid;
+                      background: var(--secondary);
+                      border-radius: 5px;
+                      margin-bottom: 10px;
+                      height: 75px;
+                      transition: .3s ease-in-out;
+                      &:hover{
+                        cursor: pointer;
+                box-shadow: 0 0 8px 2px var(--primary);
+                transition: .3s ease-in-out;
+                background: var(--hover-background);
+                      }
                         a{
                             color: var(--text-color);
                             text-decoration: none;
@@ -103,49 +117,34 @@
 
     }
 /*=============================================================================*/
-    .box-demos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
-        .grid{
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            justify-content: space-around;
-            margin: 50px 0;
-
-            a{
-                position: relative;
-                z-index: 1;
-                text-decoration: none;
-                p{
-                  margin: 0;
-                }
-            }
-            img{
-               max-width: 350px;
-               opacity: 0.9;
-            }
-        }
-    }
 /*=============================================================================*/
     .box-3{
         .project-holder{
           .project-excerpt{
               font-family: monospace;
               letter-spacing: 2px;
-              margin: 0 46px;
+              margin: 13px 46px 40px;
               display: block;
               line-height: 3;
             }
             .project{
                 display: flex;
+                width: 92%;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin: 78px 0;
+                margin: 10px auto;
+                border: 1px solid;
+                border-radius: 5px;
+                background: var(--secondary);
+               transition: .3s ease-in-out;
+               &:hover{
+                cursor: pointer;
+                box-shadow: 0 0 8px 2px var(--primary);
+                transition: .3s ease-in-out;
+                background: var(--hover-background);
+               }
                 #number{
                     font-family: 'canvas-regular';
                     position: absolute;
@@ -167,6 +166,7 @@
 
                     #description{
                         text-align: left;
+                        font-size: 18px;
                     }
                     #link{
                         color: var(--text-color);
@@ -248,7 +248,7 @@
 
        .content{
            top: 0;
-/*=============================================================================*/
+/*========================================================================================*/
         .box-1{
             display: flex;
             justify-content: space-around;
@@ -256,25 +256,24 @@
             margin: 100px 0;
 
             .port-holder{
-                width: 60%;
+                width: 50%;
                 position: relative;
-                left: 15%;
-                top: -72px;
+                left: 17%;
+                top: -70px;
               .portfolio{
                   h1{
-                    position: relative;
-                    left: 10%;
                     text-align: center;
                   }
                 .grid{
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-evenly;
-                    position: relative;
-                    right: -70px;
+                    flex-direction: column;
+                    //position: relative;
+                   // right: -70px;
 
                     .img-holder{
-                        padding: 10px;
+
                        img{
                          max-width: 300px;
                        }
@@ -288,7 +287,7 @@
             }
 
         }
-/*=============================================================================*/
+/*========================================================================================*/
         .box-2{
             flex-direction: column;
             justify-content: center;
@@ -306,7 +305,6 @@
               flex-direction: row;
               align-items: center;
 
-
               .img-holder{
                 img{
                     max-width: 340px;
@@ -316,15 +314,7 @@
 
         }
 /*=============================================================================*/
-        .box-demos{
-            margin: 90px 0;
-            .grid{
-                img{
-                   max-width: 370px;
 
-                }
-            }
-        }
 /*=============================================================================*/
         .box-3{
             .project-holder{
@@ -338,9 +328,10 @@
                     }
                 }
                 .project{
-                    height: 400px;
+                      width: 60%;
+                      height: 100px;
                     #number{
-                        font-size: 450px;
+                        font-size: 130px;
                         transition: .5s ease-in-out;
                         &:hover{
                             transition: .5s ease-in-out;

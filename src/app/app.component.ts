@@ -18,9 +18,9 @@ export class AppComponent {
   defaultTheme = 'light'
 
   constructor(private translateService:TranslateService,private _themeService: ThemeService){
-      this.translateService.setDefaultLang('english');
-      this.translateService.use('english');
-      this.translateService.addLangs(['english', 'español']);
+      this.translateService.setDefaultLang('español');
+      this.translateService.use('español');
+      this.translateService.addLangs(['español', 'english']);
       this.langs = this.translateService.getLangs();
  }
 
@@ -48,6 +48,5 @@ export class AppComponent {
               this.defaultTheme = 'light'
               this.themeInStorage = 'light'
         }
-
   }
 }

@@ -1,8 +1,28 @@
 *{
   box-sizing: border-box;
 }
-html::-webkit-scrollbar{
-  display: none;
+/*:root {
+  --primary: rgb(28, 153, 255);
+  --secondary: #8ce9ff;
+  --lightGrey: rgb(156, 156, 156);
+  --midGrey: #7e7e7e;
+  --darkGrey: #272727;
+  --danger: rgba(128, 128, 128, 0.513);
+  --font-primary: 'Open Sans', sans-serif;
+  --font-system: system-ui; /* postcssPresetEnv */
+
+//}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+//::-webkit-scrollbar-track {
+//  box-shadow: inset 0 0 3px var(--primary);
+//}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scoll-thumb);
 }
 
 body{
@@ -11,6 +31,7 @@ body{
   font-family: 'canvas-bold';
   overflow-x: hidden;
   background-color: aliceblue;
+  transition: .5s ease-in-out;
   color: #202020;
   p{
     font-family: 'canvas-regular';

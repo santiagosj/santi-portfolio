@@ -57,11 +57,11 @@
                                 <span class="project-excerpt"> {{'excerpt' | translate}}</span>
                           <div *ngFor="let project of projects" class="project">
 
-                                  <span id="number" [ngClass]="(project.id % 2 === 0) ? 'rigth' : 'left'">0{{project.id}}</span>
+                                 <!-- <span id="number" [ngClass]="(project.id % 2 === 0) ? 'rigth' : 'left'">0{{project.id}}</span> -->
 
                                   <div class="project-content">
                                       <p id="techs"> Techs: {{project.techs}}</p>
-                                      <p id="description" > {{project.description}} </p>
+                                   <!--<p id="description" > {{project.description}} </p> -->
                                       <a id="link" [attr.href]="project.link" target="_blank"> 👉 code </a>
                                       <a id="link" [attr.href]="project.demo" target="_blank"> 👉 demo </a>
                                   </div>

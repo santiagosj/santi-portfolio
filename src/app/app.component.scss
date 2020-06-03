@@ -27,19 +27,19 @@
   }
 
   @mixin cloudBubble($top, $right, $width, $height, $deg) {
-    content: '';
-    display: block;
-    position: relative;
-    top: $top;
-    right: $right;
-    width: $width;
-    height: $height;
-    border: 8px solid #D4D4D2;
-    border-radius: 100%;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    transform: rotateZ($deg);
-    background-color: #fff;
+      content: '';
+      display: block;
+      position: relative;
+      top: $top;
+      right: $right;
+      width: $width;
+      height: $height;
+      border: 8px solid #D4D4D2;
+      border-radius: 100%;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      transform: rotateZ($deg);
+      background-color: #fff;
   }
 
   /////////////////////////////////////////////////
@@ -71,7 +71,7 @@
     height: 100%;
     background-color: #C0E6F6;
     border-radius: 40px;
-    border: 4px solid #81C0D5;
+    border: 4px solid #8ce9ff;
     transition: all .1s cubic-bezier(0.250, 0.460, 0.450, 0.940);
   }
 
@@ -156,7 +156,7 @@
 
   .toggle-input:checked ~ .toggle-bg {
     background-color: #484848;
-    border-color: #202020;
+    border-color: #191919;
   }
 
   .toggle-input:checked ~ .toggle-switch .toggle-switch-figure {
