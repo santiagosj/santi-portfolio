@@ -40,10 +40,10 @@
      }
 
 .content{
-    position: absolute;
-    top: 100%;
-     display: flex;
-     flex-direction: column;
+      position: absolute;
+      top: 100%;
+      display: flex;
+      flex-direction: column;
     p{
         line-height: 3;
         letter-spacing: 2px;
@@ -67,15 +67,16 @@
                     .img-holder{
                       border: 1px solid;
                       background: var(--secondary);
-                      border-radius: 5px;
-                      margin-bottom: 10px;
+                      border-radius: 3px;
+                      margin-bottom: 2px;
                       height: 75px;
                       transition: .3s ease-in-out;
                       &:hover{
                         cursor: pointer;
-                box-shadow: 0 0 8px 2px var(--primary);
-                transition: .3s ease-in-out;
-                background: var(--hover-background);
+
+                        transform: scale(1.02);
+                        transition: .3s ease-in-out;
+                        background: var(--hover-background);
                       }
                         a{
                             color: var(--text-color);
@@ -134,14 +135,16 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin: 10px auto;
+                margin: 5px auto;
                 border: 1px solid;
-                border-radius: 5px;
+                border-radius: 3px;
                 background: var(--secondary);
-               transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+                //padding-bottom: 24px;
                &:hover{
                 cursor: pointer;
-                box-shadow: 0 0 8px 2px var(--primary);
+                transform: scale(1.02);
+
                 transition: .3s ease-in-out;
                 background: var(--hover-background);
                }
@@ -155,27 +158,39 @@
                     background-color: var(--background);
                     color: var(--text-color);
                 }
-                .rigth{
+                 /* .rigth{
                     right: 0;
                   }
                   .left{
                     left: 0;
-                  }
+                  }*/
                 .project-content{
                     text-align: center;
-
-                    #description{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    /*#description{
                         text-align: left;
                         font-size: 18px;
-                    }
-                    #link{
-                        color: var(--text-color);
-                        text-decoration: none;
-                        letter-spacing: 5px;
-                        margin:20px;
-                        position: relative;
-                        z-index: 1;
-                    }
+                    }*/
+                   .emoji{
+                     font-size: 31px;
+                    // box-shadow: 0 0 0 1px;
+                     //border-radius: 3px;
+                   }
+                  .info{
+                    padding-bottom: 20px;
+                      #link{
+                          color: var(--text-color);
+                          text-decoration: none;
+                          letter-spacing: 5px;
+                          margin:20px;
+                          position: relative;
+                          z-index: 1;
+                          font-family: monospace;
+                      }
+                  }
+
                 }
             }
         }
@@ -196,7 +211,12 @@
         }
     }
 }
-
+ footer{
+  font-family: monospace;
+  width: 100%;
+  text-align: center;
+  padding: 25px;
+ }
 }
 
 /*=============================================================================*/
@@ -328,7 +348,7 @@
                     }
                 }
                 .project{
-                      width: 60%;
+                      width: 700px;
                       height: 100px;
                     #number{
                         font-size: 130px;
@@ -341,13 +361,14 @@
 
                     }
                     .project-content{
+                        flex-direction: row;
                         text-align: center;
-
-                        #description{
-                            width: 60%;
-                            margin: auto;
-                            text-align: left;
-                        }
+                      .emoji{
+                        width: 90px;
+                        height: 90px;
+                        font-size: 60px;
+                        margin-right: 46px;
+                      }
 
                     }
                 }

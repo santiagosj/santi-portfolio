@@ -60,10 +60,16 @@
                                  <!-- <span id="number" [ngClass]="(project.id % 2 === 0) ? 'rigth' : 'left'">0{{project.id}}</span> -->
 
                                   <div class="project-content">
-                                      <p id="techs"> Techs: {{project.techs}}</p>
-                                   <!--<p id="description" > {{project.description}} </p> -->
-                                      <a id="link" [attr.href]="project.link" target="_blank"> 👉 code </a>
-                                      <a id="link" [attr.href]="project.demo" target="_blank"> 👉 demo </a>
+
+                                       <span class="emoji">{{project.description}}</span>
+
+                                      <div class="info">
+                                        <p id="techs"> Techs: {{project.techs}}</p>
+                                        <!--<p id="description" > {{project.description}} </p> -->
+                                        <a id="link" [attr.href]="project.link" target="_blank"> 👉 code </a>
+                                        <a id="link" [attr.href]="project.demo" target="_blank"> 👉 demo </a>
+                                      </div>
+
                                   </div>
 
                           </div>
@@ -80,6 +86,8 @@
                 <a href="https://api.whatsapp.com/send?phone=549${3513355470}&text=%20{{'wappMessage'|translate}}" target="_blank">Send me a Wapp message</a>
               </p>
           </section>
+
+          <footer> Made with 🧡 by Santi {{date}}</footer>
 </div>
 
 </section>

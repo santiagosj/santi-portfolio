@@ -7,28 +7,28 @@ export const PROJECTS:Project[] = [
         link:'https://github.com/santiagosj/Social-rick',
         demo:'https://social-rick-eb972.web.app/',
         techs:['Cloud functions', 'ReactJs', 'Redux', 'materialize.css'],
-        description:"..."
+        description:"🍻"
     },
     {
         id: 2,
         link:'https://github.com/santiagosj/shopping-cart',
         demo:'https://react-redux-shopping-cart.web.app/#/products',
         techs:['ReactJS','Redux','Node ☕','Firebase'],
-        description:"..."
+        description:"🛒"
     },
     {
         id: 3,
         link:'https://github.com/santiagosj/PlayRoom',
         demo:'https://tetris-react-hooks.firebaseapp.com/',
         techs:['ReactJS 🎮', 'ReactJS Hooks', 'Styled Components'],
-        description:"..."
+        description:"🎮"
     },
     {
         id: 4,
         link:'https://github.com/santiagosj/trabajo-final-UTN-reactJS',
         demo:'https://shop-utn.web.app/#/login',
         techs:['ReactJS --> ContextAPI && BulmaCSS'],
-        description:"..."
+        description:"🛒"
     },
 ]
 

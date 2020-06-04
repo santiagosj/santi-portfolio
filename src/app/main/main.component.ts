@@ -37,6 +37,7 @@ export class MainComponent implements OnInit {
   projects: Project[]
   works: Work[]
   state = 'show'
+  date = new Date().getFullYear()
 
   ngOnInit() {
     this.getProjectsFromService()

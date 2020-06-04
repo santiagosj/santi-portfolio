@@ -2,8 +2,8 @@ export const themes = {
   light : {
     'background':'aliceblue',
     '--text-color':'#202020',
-    '--scoll-thumb':'#8ce9ff',
-    '--primary':'#8ce9ff',
+    '--scoll-thumb':'#96e0ff',
+    '--primary':'#bcf3ff',
     '--secondary':'#e1f1ff',
     '--hover-background':'#ffffff'
   },
@@ -12,7 +12,7 @@ export const themes = {
     '--text-color': 'whitesmoke',
     '--scoll-thumb':'rgb(102, 102, 102)',
     '--primary':'#41365c',
-    '--secondary':'#3f3d45',
-    '--hover-background':'#55525d'
+    '--secondary':'#454346fc',
+    '--hover-background':'#545257'
   }
 };
